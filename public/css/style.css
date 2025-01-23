@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Ajouter un padding-top pour compenser la hauteur de la navbar */
+    padding-bottom: 60px; /* Ajouter un padding-bottom pour compenser la hauteur de la bottombar */
+    background: url('../images/fond.jpg') no-repeat center center fixed; /* Ajouter une image de fond */
+    background-size: cover; /* Couvrir toute la zone */
+    color: #f2f2f2; /* Couleur du texte pour un meilleur contraste */
+}
+.navbar {
+    background-color: rgba(51, 51, 51, 0.9); /* Couleur de fond avec opacité pour la navbar */
+    overflow: hidden;
+    font-size: 18px; /* Augmenter la taille de la police */
+    height: 60px; /* Augmenter la hauteur */
+    line-height: 60px; /* Centrer verticalement les liens */
+    position: fixed; /* Rendre la navbar fixe */
+    top: 0; /* Positionner en haut de la page */
+    width: 100%; /* Prendre toute la largeur */
+    z-index: 1000; /* Assurer que la navbar reste au-dessus des autres éléments */
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0 16px; /* Ajuster le padding pour centrer verticalement */
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container, .projects-container, .engagements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Effet blanchâtre avec opacité réduite pour un fond sombre */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 20px; /* Marge pour espacer les sections */
+    margin-top: 20px; /* Ajuster la marge supérieure */
+}
+.projects-container, .engagements-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent pour les encadrés */
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px; /* Coins arrondis */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 300px; /* Hauteur fixe pour tous les encadrés */
+    color: #f2f2f2; /* Couleur du texte pour un meilleur contraste */
+}
+.box img {
+    width: 100%;
+    height: 70%; /* Remplir 70% de l'encadré avec l'image */
+    object-fit: cover; /* Assurer que l'image couvre toute la zone */
+    border-bottom: 1px solid #ddd;
+}
+.box p {
+    margin: 0;
+    padding: 10px;
+    height: 30%; /* Remplir 30% de l'encadré avec le texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-bar {
+    background-color: rgba(51, 51, 51, 0.9); /* Couleur de fond avec opacité pour la bottombar */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px; /* Augmenter le padding */
+    font-size: 18px; /* Augmenter la taille de la police */
+    position: fixed; /* Rendre la bottombar fixe */
+    bottom: 0; /* Positionner en bas de la page */
+    width: 100%; /* Prendre toute la largeur */
+    z-index: 1000; /* Assurer que la bottombar reste au-dessus des autres éléments */
+}
+.title {
+    text-align: center;
+    font-size: 36px; /* Taille de police grande */
+    margin: 20px 0; /* Marge pour espacer le titre des encadrés */
+    color: #f2f2f2; /* Couleur du texte */
+}
+
+/* Styles pour les flip-box */
+.flip-box {
+    background-color: transparent;
+    width: calc(20% - 40px);
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px;
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.flip-box-front {
+    background-color: rgba(187, 187, 187, 0.8); /* Couleur de fond avec opacité pour la face avant */
+    color: black;
+}
+.flip-box-back {
+    background-color: rgba(51, 51, 51, 0.9); /* Couleur de fond avec opacité pour la face arrière */
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Styles spécifiques pour la page de contact */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Effet blanchâtre avec opacité réduite pour un fond sombre */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 20px; /* Marge pour espacer les sections */
+    margin-top: 20px; /* Ajuster la marge supérieure */
+}
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 20px;
+}
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f2f2f2;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f2f2f2;
+}
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #555;
+}
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 20px;
+    color: #f2f2f2;
+}
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+.social-links a:hover {
+    text-decoration: underline;
+}
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+}
+
+/* Styles pour le message flash */
+.flash-success {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
