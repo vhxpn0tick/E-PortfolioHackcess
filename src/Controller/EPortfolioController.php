@@ -64,6 +64,7 @@ class EPortfolioController extends AbstractController
         $message = $request->request->get('message');
 
         $emailMessage = (new Email())
+<<<<<<< HEAD
             ->from('hello@example.com')
             ->to('mathieu.dumas@hackcess.org') // Remplacez par votre adresse e-mail personnelle
             //->cc('cc@example.com')
@@ -73,6 +74,12 @@ class EPortfolioController extends AbstractController
             ->subject($subject)
             ->text("Nom: $name\nEmail: $email\n\nMessage:\n$message")
             ->html('<p>See Twig integration for better HTML integration!</p>');
+=======
+            ->from($email)
+            ->to('mathieu.dumas@hackcess.org') // Remplacez par votre adresse e-mail personnelle
+            ->subject($subject)
+            ->text("Nom: $name\nEmail: $email\n\nMessage:\n$message");
+>>>>>>> 274067a689964e4a133af29cee1eefd2cc87d228
 
         $mailer->send($emailMessage);
 

@@ -2831,6 +2831,7 @@
 [2025-01-23T09:12:47.428897+00:00] request.INFO: Matched route "contact". {"route":"contact","route_parameters":{"_route":"contact","_controller":"App\\Controller\\EPortfolioController::contact"},"request_uri":"http://127.0.0.1:8000/contact","method":"GET"} []
 [2025-01-23T09:12:47.430455+00:00] security.DEBUG: Checking for authenticator support. {"firewall_name":"main","authenticators":0} []
 [2025-01-23T09:12:47.504019+00:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"cd33b9"},"request_uri":"http://127.0.0.1:8000/_wdt/cd33b9","method":"GET"} []
+<<<<<<< HEAD
 [2025-01-23T23:00:01.199179+00:00] request.INFO: Matched route "app_e_portfolio". {"route":"app_e_portfolio","route_parameters":{"_route":"app_e_portfolio","_controller":"App\\Controller\\EPortfolioController::index"},"request_uri":"http://127.0.0.1:8000/","method":"GET"} []
 [2025-01-23T23:00:01.308987+00:00] security.DEBUG: Checking for authenticator support. {"firewall_name":"main","authenticators":0} []
 [2025-01-23T23:00:03.942641+00:00] request.INFO: Matched route "app_e_portfolio". {"route":"app_e_portfolio","route_parameters":{"_route":"app_e_portfolio","_controller":"App\\Controller\\EPortfolioController::index"},"request_uri":"http://127.0.0.1:8000/","method":"GET"} []
@@ -2863,3 +2864,5 @@
 [2025-01-23T23:00:20.098961+00:00] request.INFO: Matched route "contact". {"route":"contact","route_parameters":{"_route":"contact","_controller":"App\\Controller\\EPortfolioController::contact"},"request_uri":"http://127.0.0.1:8000/contact","method":"GET"} []
 [2025-01-23T23:00:20.103171+00:00] security.DEBUG: Checking for authenticator support. {"firewall_name":"main","authenticators":0} []
 [2025-01-23T23:00:20.226408+00:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"32bccb"},"request_uri":"http://127.0.0.1:8000/_wdt/32bccb","method":"GET"} []
+=======
+>>>>>>> 274067a689964e4a133af29cee1eefd2cc87d228

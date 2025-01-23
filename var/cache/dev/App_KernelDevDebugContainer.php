@@ -16,6 +16,11 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerGdraVS2\App_KernelDevDebugContainer([
     'container.build_hash' => 'GdraVS2',
+<<<<<<< HEAD
     'container.build_id' => '8b54286c',
     'container.build_time' => 1737673160,
+=======
+    'container.build_id' => '56c03d50',
+    'container.build_time' => 1737573264,
+>>>>>>> 274067a689964e4a133af29cee1eefd2cc87d228
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerGdraVS2');
