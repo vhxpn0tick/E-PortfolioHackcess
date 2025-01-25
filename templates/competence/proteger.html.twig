@@ -1,30 +1,65 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Mes compétences{% endblock %}
 
 {% block body %}
-<h1 class="title">Mes Projets</h1>
+<h1>Mes compétences</h1>
 
-<div class="container">
-    <a href="{{ path('competence_administrer') }}" class="box">
-        <img src="{{ asset('images/image.jpg') }}" alt="Image 1">
-        <p>Administrer</p>
-    </a>
-    <a href="{{ path('competence_connecter') }}" class="box">
-        <img src="{{ asset('images/image2.jpg') }}" alt="Image 2">
-        <p>Connecter</p>
-    </a>
-    <a href="{{ path('competence_programmer') }}" class="box">
-        <img src="{{ asset('images/image3.jpg') }}" alt="Image 3">
-        <p>Programmer</p>
-    </a>
-    <a href="{{ path('competence_securiser') }}" class="box">
-        <img src="{{ asset('images/image4.jpg') }}" alt="Image 4">
-        <p>Sécuriser</p>
-    </a>
-    <a href="{{ path('competence_proteger') }}" class="box">
-        <img src="{{ asset('images/image5.jpg') }}" alt="Image 5">
-        <p>Protéger</p>
-    </a>
+<div class="projects-container">
+    <div class="competence-row reverse">
+        <div class="box photo-box">
+            <img src="{{ asset('images/photo1.jpg') }}" alt="Photo 1">
+        </div>
+        <div class="box text-box">
+            <h2>Compétence 1</h2>
+            <p>Description de la compétence 1.</p>
+        </div>
+    </div>
+    <div class="competence-row">
+        <div class="box photo-box">
+            <img src="{{ asset('images/photo2.jpg') }}" alt="Photo 2">
+        </div>
+        <div class="box text-box">
+            <h2>Compétence 2</h2>
+            <p>Description de la compétence 2.</p>
+        </div>
+    </div>
+    <div class="competence-row reverse">
+        <div class="box photo-box">
+            <img src="{{ asset('images/photo3.jpg') }}" alt="Photo 3">
+        </div>
+        <div class="box text-box">
+            <h2>Compétence 3</h2>
+            <p>Description de la compétence 3.</p>
+        </div>
+    </div>
+    <div class="competence-row">
+        <div class="box photo-box">
+            <img src="{{ asset('images/photo4.jpg') }}" alt="Photo 4">
+        </div>
+        <div class="box text-box">
+            <h2>Compétence 4</h2>
+            <p>Description de la compétence 4.</p>
+        </div>
+    </div>
+    <div class="competence-row reverse">
+        <div class="box photo-box">
+            <img src="{{ asset('images/photo5.jpg') }}" alt="Photo 5">
+        </div>
+        <div class="box text-box">
+            <h2>Compétence 5</h2>
+            <p>Description de la compétence 5.</p>
+        </div>
+    </div>
+    <div class="competence-row">
+        <div class="box photo-box">
+            <img src="{{ asset('images/photo6.jpg') }}" alt="Photo 6">
+        </div>
+        <div class="box text-box">
+            <h2>Compétence 6</h2>
+            <p>Description de la compétence 6.</p>
+        </div>
+    </div>
 </div>
+
 {% endblock %}

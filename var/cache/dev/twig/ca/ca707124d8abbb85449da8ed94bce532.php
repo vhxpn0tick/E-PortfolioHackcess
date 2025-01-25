@@ -62,11 +62,26 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
 </head>
 <body>
     <div class=\"navbar\">
-        <a href=\"\">Accueil</a>
-        <a href=\"\">À propos de moi</a>
-        <a href=\"\">Mes Projets</a>
-        <a href=\"\">Expérience professionnelle</a>
-        <a href=\"\">Mes engagements</a>
+        <a href=\"";
+        // line 10
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
+        yield "\">Accueil</a>
+        <a href=\"";
+        // line 11
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
+        yield "#about\">À propos de moi</a>
+        <a href=\"";
+        // line 12
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
+        yield "#projects\">Mes Projets</a>
+        <a href=\"";
+        // line 13
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
+        yield "#experience\">Expérience professionnelle</a>
+        <a href=\"";
+        // line 14
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
+        yield "#engagements\">Mes engagements</a>
         <a href=\"";
         // line 15
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
@@ -158,7 +173,7 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  119 => 18,  96 => 5,  80 => 19,  78 => 18,  72 => 15,  60 => 6,  56 => 5,  50 => 1,);
+        return array (  134 => 18,  111 => 5,  95 => 19,  93 => 18,  87 => 15,  83 => 14,  79 => 13,  75 => 12,  71 => 11,  67 => 10,  60 => 6,  56 => 5,  50 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -172,11 +187,11 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
 </head>
 <body>
     <div class=\"navbar\">
-        <a href=\"\">Accueil</a>
-        <a href=\"\">À propos de moi</a>
-        <a href=\"\">Mes Projets</a>
-        <a href=\"\">Expérience professionnelle</a>
-        <a href=\"\">Mes engagements</a>
+        <a href=\"{{ path('app_e_portfolio') }}\">Accueil</a>
+        <a href=\"{{ path('app_e_portfolio') }}#about\">À propos de moi</a>
+        <a href=\"{{ path('app_e_portfolio') }}#projects\">Mes Projets</a>
+        <a href=\"{{ path('app_e_portfolio') }}#experience\">Expérience professionnelle</a>
+        <a href=\"{{ path('app_e_portfolio') }}#engagements\">Mes engagements</a>
         <a href=\"{{ path('contact') }}\">Contact</a> <!-- Lien vers la page de contact -->
     </div>
 

@@ -211,3 +211,77 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+/*-----------------*/
+h1 {
+    text-align: center; /* Centre le texte horizontalement */
+    margin-bottom: 20px; /* Ajoute un espace en dessous du titre */
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    margin-bottom: 20px;
+}
+
+.competence-row {
+    display: flex;
+    justify-content: space-between; /* Espace les éléments horizontalement */
+    width: 100%; /* Assure que les éléments prennent toute la largeur disponible */
+    max-width: 1200px; /* Limite la largeur maximale */
+    margin-bottom: 20px;
+}
+
+.competence-row .box {
+    flex: 0 0 48%; /* Ajuste la largeur pour deux éléments par ligne */
+    margin: 0 10px; /* Ajoute un espace entre les éléments */
+    position: relative; /* Permet de positionner l'image absolument */
+}
+
+.competence-row .box img {
+    width: 100%; /* L'image prend toute la largeur de la box */
+    height: 100%; /* L'image prend toute la hauteur de la box */
+    object-fit: cover; /* L'image couvre toute la box sans déformation */
+}
+
+.competence-row.reverse {
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container .box {
+    flex: 0 0 48%; /* Ajuste la largeur pour deux éléments par ligne */
+    margin-bottom: 20px; /* Ajoute un espace entre les lignes */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.projects-container .box {
+    flex: 0 0 30%; /* Ajuste la largeur pour trois éléments par ligne */
+    margin-bottom: 20px; /* Ajoute un espace entre les lignes */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+.container, .projects-container, .engagements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin-bottom: 20px;
+}
+
+.container .box, .projects-container .box, .engagements-container .box {
+    flex: 0 0 45%; /* Ajuste la largeur pour deux éléments par ligne, réduit la taille */
+    margin-bottom: 20px; /* Ajoute un espace entre les lignes */
+    text-align: center; /* Centre le texte horizontalement */
+}

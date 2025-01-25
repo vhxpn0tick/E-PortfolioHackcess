@@ -73,7 +73,7 @@ class __TwigTemplate_1608df4ab82d912289baa546ca01615d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Accueil";
+        yield "Mes compétences";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -97,60 +97,83 @@ class __TwigTemplate_1608df4ab82d912289baa546ca01615d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        yield "<h1 class=\"title\">Mes Projets</h1>
+        yield "<h1>Mes compétences</h1>
 
-<div class=\"container\">
-    <a href=\"";
-        // line 9
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_administrer");
-        yield "\" class=\"box\">
-        <img src=\"";
-        // line 10
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/canard.jpg"), "html", null, true);
-        yield "\" alt=\"Image 1\">
-        <p>Administrer</p>
-    </a>
-    <a href=\"";
-        // line 13
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_connecter");
-        yield "\" class=\"box\">
-        <img src=\"";
-        // line 14
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image2.jpg"), "html", null, true);
-        yield "\" alt=\"Image 2\">
-        <p>Connecter</p>
-    </a>
-    <a href=\"";
-        // line 17
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_programmer");
-        yield "\" class=\"box\">
-        <img src=\"";
-        // line 18
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image3.jpg"), "html", null, true);
-        yield "\" alt=\"Image 3\">
-        <p>Programmer</p>
-    </a>
-    <a href=\"";
-        // line 21
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_securiser");
-        yield "\" class=\"box\">
-        <img src=\"";
-        // line 22
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image4.jpg"), "html", null, true);
-        yield "\" alt=\"Image 4\">
-        <p>Sécuriser</p>
-    </a>
-    <a href=\"";
-        // line 25
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_proteger");
-        yield "\" class=\"box\">
-        <img src=\"";
-        // line 26
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image5.jpg"), "html", null, true);
-        yield "\" alt=\"Image 5\">
-        <p>Protéger</p>
-    </a>
+<div class=\"projects-container\">
+    <div class=\"competence-row reverse\">
+        <div class=\"box photo-box\">
+            <img src=\"";
+        // line 11
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photo1.jpg"), "html", null, true);
+        yield "\" alt=\"Photo 1\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 1</h2>
+            <p>Description de la compétence 1.</p>
+        </div>
+    </div>
+    <div class=\"competence-row\">
+        <div class=\"box photo-box\">
+            <img src=\"";
+        // line 20
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photo2.jpg"), "html", null, true);
+        yield "\" alt=\"Photo 2\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 2</h2>
+            <p>Description de la compétence 2.</p>
+        </div>
+    </div>
+    <div class=\"competence-row reverse\">
+        <div class=\"box photo-box\">
+            <img src=\"";
+        // line 29
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photo3.jpg"), "html", null, true);
+        yield "\" alt=\"Photo 3\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 3</h2>
+            <p>Description de la compétence 3.</p>
+        </div>
+    </div>
+    <div class=\"competence-row\">
+        <div class=\"box photo-box\">
+            <img src=\"";
+        // line 38
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photo4.jpg"), "html", null, true);
+        yield "\" alt=\"Photo 4\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 4</h2>
+            <p>Description de la compétence 4.</p>
+        </div>
+    </div>
+    <div class=\"competence-row reverse\">
+        <div class=\"box photo-box\">
+            <img src=\"";
+        // line 47
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photo5.jpg"), "html", null, true);
+        yield "\" alt=\"Photo 5\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 5</h2>
+            <p>Description de la compétence 5.</p>
+        </div>
+    </div>
+    <div class=\"competence-row\">
+        <div class=\"box photo-box\">
+            <img src=\"";
+        // line 56
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/photo6.jpg"), "html", null, true);
+        yield "\" alt=\"Photo 6\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 6</h2>
+            <p>Description de la compétence 6.</p>
+        </div>
+    </div>
 </div>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -182,40 +205,75 @@ class __TwigTemplate_1608df4ab82d912289baa546ca01615d extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  149 => 26,  145 => 25,  139 => 22,  135 => 21,  129 => 18,  125 => 17,  119 => 14,  115 => 13,  109 => 10,  105 => 9,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  167 => 56,  155 => 47,  143 => 38,  131 => 29,  119 => 20,  107 => 11,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Accueil{% endblock %}
+{% block title %}Mes compétences{% endblock %}
 
 {% block body %}
-<h1 class=\"title\">Mes Projets</h1>
+<h1>Mes compétences</h1>
 
-<div class=\"container\">
-    <a href=\"{{ path('competence_administrer') }}\" class=\"box\">
-        <img src=\"{{ asset('images/canard.jpg') }}\" alt=\"Image 1\">
-        <p>Administrer</p>
-    </a>
-    <a href=\"{{ path('competence_connecter') }}\" class=\"box\">
-        <img src=\"{{ asset('images/image2.jpg') }}\" alt=\"Image 2\">
-        <p>Connecter</p>
-    </a>
-    <a href=\"{{ path('competence_programmer') }}\" class=\"box\">
-        <img src=\"{{ asset('images/image3.jpg') }}\" alt=\"Image 3\">
-        <p>Programmer</p>
-    </a>
-    <a href=\"{{ path('competence_securiser') }}\" class=\"box\">
-        <img src=\"{{ asset('images/image4.jpg') }}\" alt=\"Image 4\">
-        <p>Sécuriser</p>
-    </a>
-    <a href=\"{{ path('competence_proteger') }}\" class=\"box\">
-        <img src=\"{{ asset('images/image5.jpg') }}\" alt=\"Image 5\">
-        <p>Protéger</p>
-    </a>
+<div class=\"projects-container\">
+    <div class=\"competence-row reverse\">
+        <div class=\"box photo-box\">
+            <img src=\"{{ asset('images/photo1.jpg') }}\" alt=\"Photo 1\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 1</h2>
+            <p>Description de la compétence 1.</p>
+        </div>
+    </div>
+    <div class=\"competence-row\">
+        <div class=\"box photo-box\">
+            <img src=\"{{ asset('images/photo2.jpg') }}\" alt=\"Photo 2\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 2</h2>
+            <p>Description de la compétence 2.</p>
+        </div>
+    </div>
+    <div class=\"competence-row reverse\">
+        <div class=\"box photo-box\">
+            <img src=\"{{ asset('images/photo3.jpg') }}\" alt=\"Photo 3\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 3</h2>
+            <p>Description de la compétence 3.</p>
+        </div>
+    </div>
+    <div class=\"competence-row\">
+        <div class=\"box photo-box\">
+            <img src=\"{{ asset('images/photo4.jpg') }}\" alt=\"Photo 4\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 4</h2>
+            <p>Description de la compétence 4.</p>
+        </div>
+    </div>
+    <div class=\"competence-row reverse\">
+        <div class=\"box photo-box\">
+            <img src=\"{{ asset('images/photo5.jpg') }}\" alt=\"Photo 5\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 5</h2>
+            <p>Description de la compétence 5.</p>
+        </div>
+    </div>
+    <div class=\"competence-row\">
+        <div class=\"box photo-box\">
+            <img src=\"{{ asset('images/photo6.jpg') }}\" alt=\"Photo 6\">
+        </div>
+        <div class=\"box text-box\">
+            <h2>Compétence 6</h2>
+            <p>Description de la compétence 6.</p>
+        </div>
+    </div>
 </div>
+
 {% endblock %}", "competence/administrer.html.twig", "C:\\Users\\mathi\\Documents\\E-Portfolio\\templates\\competence\\administrer.html.twig");
     }
 }

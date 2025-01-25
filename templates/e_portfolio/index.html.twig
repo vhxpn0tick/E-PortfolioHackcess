@@ -2,8 +2,9 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block body %}
-<h1 class="title">À propos de moi</h1>
+{% block body %}>
+
+<h1 class="title" id="about">À propos de moi</h1>
 
 <div class="container">
     <div class="box flip-box">
@@ -28,9 +29,9 @@
     </div>
 </div>
 
-<h1 class="title">Mes Projets</h1>
+<h1 class="title" id="projects">Mes Projets</h1>
 
-<div class="projects-container">
+<div class="engagements-container">
     <a href="{{ path('competence_administrer') }}" class="box">
         <img src="{{ asset('images/canard.jpg') }}" alt="Image 1">
         <p>Administrer</p>
@@ -53,7 +54,7 @@
     </a>
 </div>
 
-<h1 class="title">Expérience professionnelle</h1>
+<h1 class="title" id="experience">Expérience professionnelle</h1>
 
 <div class="container">
     <div class="box flip-box">
@@ -69,29 +70,26 @@
     <div class="box flip-box">
         <div class="flip-box-inner">
             <div class="flip-box-front">
-                <img src="{{ asset('images/soutien_informatique.jpg') }}" alt="Soutien au Service Informatique">
+                <img src="{{ asset('images/another_image.jpg') }}" alt="Another Image">
             </div>
             <div class="flip-box-back">
-                <p>Soutien au Service Informatique</p>
+                <p>Another Description</p>
             </div>
         </div>
     </div>
 </div>
 
-<h1 class="title">Mes engagements</h1>
+<h1 class="title" id="engagements">Mes engagements</h1>
 
 <div class="engagements-container">
     <div class="box">
-        <img src="{{ asset('images/basketball.jpg') }}" alt="Basketball">
-        <p>Basketball</p>
+        <img src="{{ asset('images/engagement1.jpg') }}" alt="Engagement 1">
+        <p>Engagement 1</p>
     </div>
     <div class="box">
-        <img src="{{ asset('images/hackcess.jpg') }}" alt="Hackcess">
-        <p>Hackcess</p>
-    </div>
-    <div class="box">
-        <img src="{{ asset('images/iut_roanne.jpg') }}" alt="IUT de Roanne">
-        <p>IUT de Roanne</p>
+        <img src="{{ asset('images/engagement2.jpg') }}" alt="Engagement 2">
+        <p>Engagement 2</p>
     </div>
 </div>
+
 {% endblock %}

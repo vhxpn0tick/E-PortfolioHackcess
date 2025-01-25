@@ -96,15 +96,16 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        yield "<h1 class=\"title\">À propos de moi</h1>
+        yield ">
+
+<h1 class=\"title\" id=\"about\">À propos de moi</h1>
 
 <div class=\"container\">
     <div class=\"box flip-box\">
         <div class=\"flip-box-inner\">
             <div class=\"flip-box-front\">
                 <img src=\"";
-        // line 12
+        // line 13
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/about1.jpg"), "html", null, true);
         yield "\" alt=\"About Image 1\">
             </div>
@@ -117,7 +118,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
         <div class=\"flip-box-inner\">
             <div class=\"flip-box-front\">
                 <img src=\"";
-        // line 22
+        // line 23
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/about2.jpg"), "html", null, true);
         yield "\" alt=\"About Image 2\">
             </div>
@@ -128,69 +129,69 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
     </div>
 </div>
 
-<h1 class=\"title\">Mes Projets</h1>
+<h1 class=\"title\" id=\"projects\">Mes Projets</h1>
 
-<div class=\"projects-container\">
+<div class=\"engagements-container\">
     <a href=\"";
-        // line 34
+        // line 35
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_administrer");
         yield "\" class=\"box\">
         <img src=\"";
-        // line 35
+        // line 36
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/canard.jpg"), "html", null, true);
         yield "\" alt=\"Image 1\">
         <p>Administrer</p>
     </a>
     <a href=\"";
-        // line 38
+        // line 39
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_connecter");
         yield "\" class=\"box\">
         <img src=\"";
-        // line 39
+        // line 40
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image2.jpg"), "html", null, true);
         yield "\" alt=\"Image 2\">
         <p>Connecter</p>
     </a>
     <a href=\"";
-        // line 42
+        // line 43
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_programmer");
         yield "\" class=\"box\">
         <img src=\"";
-        // line 43
+        // line 44
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image3.jpg"), "html", null, true);
         yield "\" alt=\"Image 3\">
         <p>Programmer</p>
     </a>
     <a href=\"";
-        // line 46
+        // line 47
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_securiser");
         yield "\" class=\"box\">
         <img src=\"";
-        // line 47
+        // line 48
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image4.jpg"), "html", null, true);
         yield "\" alt=\"Image 4\">
         <p>Sécuriser</p>
     </a>
     <a href=\"";
-        // line 50
+        // line 51
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_proteger");
         yield "\" class=\"box\">
         <img src=\"";
-        // line 51
+        // line 52
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/image5.jpg"), "html", null, true);
         yield "\" alt=\"Image 5\">
         <p>Protéger</p>
     </a>
 </div>
 
-<h1 class=\"title\">Expérience professionnelle</h1>
+<h1 class=\"title\" id=\"experience\">Expérience professionnelle</h1>
 
 <div class=\"container\">
     <div class=\"box flip-box\">
         <div class=\"flip-box-inner\">
             <div class=\"flip-box-front\">
                 <img src=\"";
-        // line 62
+        // line 63
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/tuteur_numerique.jpg"), "html", null, true);
         yield "\" alt=\"Tuteur numérique Etudiant\">
             </div>
@@ -203,42 +204,36 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
         <div class=\"flip-box-inner\">
             <div class=\"flip-box-front\">
                 <img src=\"";
-        // line 72
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/soutien_informatique.jpg"), "html", null, true);
-        yield "\" alt=\"Soutien au Service Informatique\">
+        // line 73
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/another_image.jpg"), "html", null, true);
+        yield "\" alt=\"Another Image\">
             </div>
             <div class=\"flip-box-back\">
-                <p>Soutien au Service Informatique</p>
+                <p>Another Description</p>
             </div>
         </div>
     </div>
 </div>
 
-<h1 class=\"title\">Mes engagements</h1>
+<h1 class=\"title\" id=\"engagements\">Mes engagements</h1>
 
 <div class=\"engagements-container\">
     <div class=\"box\">
         <img src=\"";
-        // line 85
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/basketball.jpg"), "html", null, true);
-        yield "\" alt=\"Basketball\">
-        <p>Basketball</p>
+        // line 86
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/engagement1.jpg"), "html", null, true);
+        yield "\" alt=\"Engagement 1\">
+        <p>Engagement 1</p>
     </div>
     <div class=\"box\">
         <img src=\"";
-        // line 89
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/hackcess.jpg"), "html", null, true);
-        yield "\" alt=\"Hackcess\">
-        <p>Hackcess</p>
-    </div>
-    <div class=\"box\">
-        <img src=\"";
-        // line 93
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/iut_roanne.jpg"), "html", null, true);
-        yield "\" alt=\"IUT de Roanne\">
-        <p>IUT de Roanne</p>
+        // line 90
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/engagement2.jpg"), "html", null, true);
+        yield "\" alt=\"Engagement 2\">
+        <p>Engagement 2</p>
     </div>
 </div>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -270,7 +265,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  237 => 93,  230 => 89,  223 => 85,  207 => 72,  194 => 62,  180 => 51,  176 => 50,  170 => 47,  166 => 46,  160 => 43,  156 => 42,  150 => 39,  146 => 38,  140 => 35,  136 => 34,  121 => 22,  108 => 12,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  231 => 90,  224 => 86,  208 => 73,  195 => 63,  181 => 52,  177 => 51,  171 => 48,  167 => 47,  161 => 44,  157 => 43,  151 => 40,  147 => 39,  141 => 36,  137 => 35,  122 => 23,  109 => 13,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -279,8 +274,9 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
 
 {% block title %}Accueil{% endblock %}
 
-{% block body %}
-<h1 class=\"title\">À propos de moi</h1>
+{% block body %}>
+
+<h1 class=\"title\" id=\"about\">À propos de moi</h1>
 
 <div class=\"container\">
     <div class=\"box flip-box\">
@@ -305,9 +301,9 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
     </div>
 </div>
 
-<h1 class=\"title\">Mes Projets</h1>
+<h1 class=\"title\" id=\"projects\">Mes Projets</h1>
 
-<div class=\"projects-container\">
+<div class=\"engagements-container\">
     <a href=\"{{ path('competence_administrer') }}\" class=\"box\">
         <img src=\"{{ asset('images/canard.jpg') }}\" alt=\"Image 1\">
         <p>Administrer</p>
@@ -330,7 +326,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
     </a>
 </div>
 
-<h1 class=\"title\">Expérience professionnelle</h1>
+<h1 class=\"title\" id=\"experience\">Expérience professionnelle</h1>
 
 <div class=\"container\">
     <div class=\"box flip-box\">
@@ -346,31 +342,28 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
     <div class=\"box flip-box\">
         <div class=\"flip-box-inner\">
             <div class=\"flip-box-front\">
-                <img src=\"{{ asset('images/soutien_informatique.jpg') }}\" alt=\"Soutien au Service Informatique\">
+                <img src=\"{{ asset('images/another_image.jpg') }}\" alt=\"Another Image\">
             </div>
             <div class=\"flip-box-back\">
-                <p>Soutien au Service Informatique</p>
+                <p>Another Description</p>
             </div>
         </div>
     </div>
 </div>
 
-<h1 class=\"title\">Mes engagements</h1>
+<h1 class=\"title\" id=\"engagements\">Mes engagements</h1>
 
 <div class=\"engagements-container\">
     <div class=\"box\">
-        <img src=\"{{ asset('images/basketball.jpg') }}\" alt=\"Basketball\">
-        <p>Basketball</p>
+        <img src=\"{{ asset('images/engagement1.jpg') }}\" alt=\"Engagement 1\">
+        <p>Engagement 1</p>
     </div>
     <div class=\"box\">
-        <img src=\"{{ asset('images/hackcess.jpg') }}\" alt=\"Hackcess\">
-        <p>Hackcess</p>
-    </div>
-    <div class=\"box\">
-        <img src=\"{{ asset('images/iut_roanne.jpg') }}\" alt=\"IUT de Roanne\">
-        <p>IUT de Roanne</p>
+        <img src=\"{{ asset('images/engagement2.jpg') }}\" alt=\"Engagement 2\">
+        <p>Engagement 2</p>
     </div>
 </div>
+
 {% endblock %}", "e_portfolio/index.html.twig", "C:\\Users\\mathi\\Documents\\E-Portfolio\\templates\\e_portfolio\\index.html.twig");
     }
 }
