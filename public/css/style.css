@@ -92,15 +92,15 @@ body {
     margin: 20px 0; /* Marge pour espacer le titre des encadrés */
     color: #f2f2f2; /* Couleur du texte */
 }
-
 /* Styles pour les flip-box */
 .flip-box {
     background-color: transparent;
-    width: calc(20% - 40px);
-    height: 300px;
-    perspective: 1000px;
-    margin: 10px;
+    width: 100%;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    perspective: 1000px; /* Ajoute une perspective pour l'effet de flip */
+    margin-bottom: 20px; /* Ajoute un espace entre les flip-box */
 }
+
 .flip-box-inner {
     position: relative;
     width: 100%;
@@ -109,28 +109,28 @@ body {
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
+
 .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
 }
-.flip-box-front {
-    background-color: rgba(187, 187, 187, 0.8); /* Couleur de fond avec opacité pour la face avant */
-    color: black;
+
+.flip-box-front img, .flip-box-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image couvre toute la box sans déformation */
 }
+
 .flip-box-back {
-    background-color: rgba(51, 51, 51, 0.9); /* Couleur de fond avec opacité pour la face arrière */
-    color: white;
+    background-color: transparent; /* Couleur de fond transparente pour le dos de la box */
+    color: white; /* Couleur du texte pour le dos de la box */
     transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
 }
 
 /* Styles spécifiques pour la page de contact */
