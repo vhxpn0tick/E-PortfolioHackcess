@@ -69,18 +69,22 @@ body {
 }
 .box p {
     margin: 0;
-    padding: 10px;
-    height: 30%; /* Remplir 30% de l'encadré avec le texte */
+    padding: 10px; /* Réduire le padding pour remonter le texte */
+    height: auto; /* Ajuster la hauteur automatiquement en fonction du contenu */
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Aligner le texte en haut de la box */
     justify-content: center;
+}
+.box h2 {
+    margin-top : 10px;
+    margin-bottom: 0px;
 }
 .contact-bar {
     background-color: rgba(51, 51, 51, 0.9); /* Couleur de fond avec opacité pour la bottombar */
     color: #f2f2f2;
     text-align: center;
-    padding: 20px; /* Augmenter le padding */
-    font-size: 18px; /* Augmenter la taille de la police */
+    padding: 5px; /* Réduire encore le padding */
+    font-size: 12px; /* Réduire encore la taille de la police */
     position: fixed; /* Rendre la bottombar fixe */
     bottom: 0; /* Positionner en bas de la page */
     width: 100%; /* Prendre toute la largeur */
@@ -92,7 +96,11 @@ body {
     margin: 20px 0; /* Marge pour espacer le titre des encadrés */
     color: #f2f2f2; /* Couleur du texte */
 }
+
+
+
 /* Styles pour les flip-box */
+
 .flip-box {
     background-color: transparent;
     width: 100%;
@@ -285,3 +293,4 @@ h1 {
     margin-bottom: 20px; /* Ajoute un espace entre les lignes */
     text-align: center; /* Centre le texte horizontalement */
 }
+

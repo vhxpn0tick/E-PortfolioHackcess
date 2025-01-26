@@ -59,39 +59,40 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
         // line 6
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/style.css"), "html", null, true);
         yield "\">
+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\">
 </head>
 <body>
     <div class=\"navbar\">
         <a href=\"";
-        // line 10
+        // line 11
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
         yield "\">Accueil</a>
         <a href=\"";
-        // line 11
+        // line 12
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
         yield "#about\">À propos de moi</a>
         <a href=\"";
-        // line 12
+        // line 13
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
         yield "#projects\">Mes Projets</a>
         <a href=\"";
-        // line 13
+        // line 14
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
         yield "#experience\">Expérience professionnelle</a>
         <a href=\"";
-        // line 14
+        // line 15
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_e_portfolio");
         yield "#engagements\">Mes engagements</a>
         <a href=\"";
-        // line 15
+        // line 16
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
         yield "\">Contact</a> <!-- Lien vers la page de contact -->
     </div>
 
     ";
-        // line 18
-        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         // line 19
+        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
+        // line 20
         yield "
     <div class=\"contact-bar\">
         <p>Contactez-moi via les réseaux sociaux ou par email.</p>
@@ -130,7 +131,7 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
         yield from [];
     }
 
-    // line 18
+    // line 19
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -173,7 +174,7 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  134 => 18,  111 => 5,  95 => 19,  93 => 18,  87 => 15,  83 => 14,  79 => 13,  75 => 12,  71 => 11,  67 => 10,  60 => 6,  56 => 5,  50 => 1,);
+        return array (  135 => 19,  112 => 5,  96 => 20,  94 => 19,  88 => 16,  84 => 15,  80 => 14,  76 => 13,  72 => 12,  68 => 11,  60 => 6,  56 => 5,  50 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -184,6 +185,7 @@ class __TwigTemplate_3e2bfd54cf9ac34571e57bc81100dfcf extends Template
     <meta charset=\"UTF-8\">
     <title>{% block title %}Accueil{% endblock %}</title>
     <link rel=\"stylesheet\" href=\"{{ asset('css/style.css') }}\">
+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\">
 </head>
 <body>
     <div class=\"navbar\">

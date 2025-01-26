@@ -164,7 +164,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
     </a>
     <a href=\"";
         // line 47
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_securiser");
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_proteger");
         yield "\" class=\"box\">
         <img src=\"";
         // line 48
@@ -174,7 +174,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
     </a>
     <a href=\"";
         // line 51
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_proteger");
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("competence_securiser");
         yield "\" class=\"box\">
         <img src=\"";
         // line 52
@@ -197,7 +197,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
             </div>
             <div class=\"flip-box-back\">
                 <h1>Tuteur numérique Etudiant</h1>
-                <p>Aout - Octobre 2024</p>
+                <h3>Aout - Octobre 2024</h3>
                 <p>J'ai aidé les étudiants pour solutionner des problèmes informatiques au début d'année scolaire. Je les aidais dans les procédures numériques, les conseillais pour du matériel information ou les guidais sur les outils mis à disposition par l'UJM</p>
             </div>
         </div>
@@ -212,7 +212,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
             </div>
             <div class=\"flip-box-back\">
                 <h1>Renfort auu service informatique</h1>
-                <p>Juillet 2024</p>
+                <h3>Juillet 2024</h3>
                 <p>Pendant les vacances, je suis venu aider le service informatique notammer pour effectuer le changement et déploiement de nouveaux outils /matériels informatiques dans l'IUT mais aussi pour effectuer la maintenance de l’infrastructure réseau</p>
 
             </div>
@@ -223,27 +223,55 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
 <h1 class=\"title\" id=\"engagements\">Mes engagements</h1>
 
 <div class=\"engagements-container\">
-    <div class=\"box\">
-        <img src=\"";
-        // line 91
+    <div class=\"box flip-box\">
+        <div class=\"flip-box-inner\">
+            <div class=\"flip-box-front\">
+                <img src=\"";
+        // line 93
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/arbitre.jpg"), "html", null, true);
-        yield "\" alt=\"Engagement 1\">
-        <p>Arbitre départementale de basketball</p>
+        yield "\" alt=\"Another Image\">
+            </div>
+            <div class=\"flip-box-back\">
+                <h1>Arbitre départementale de basketball</h1>
+                <h3>Depuis 2021</h3>
+                <p>A la fin du COVID-19, j'ai pu passer la formation d'arbitre départementale de basket. Je suis alors devenu arbitre stagiaire pour le comité de la Loire et après quelque mois, j'ai pu devenir arbitre officiel. Cela m'a permis de pouvoir continuer d'arbitrer des match pour le comité en allant jusqu'à arbitrer de la régionale. J'ai aussi pu arbitrer des matchs internationnaux comme sur la photo au tournoi internationnal de montbrison. </p>
+            </div>
+        </div>
     </div>
-    <div class=\"box\">
-        <img src=\"";
-        // line 95
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/hackcess2.png"), "html", null, true);
-        yield "\" alt=\"Engagement 2\">
-        <p>Vice-Président d'Hackcess</p>
+    <div class=\"box flip-box\">
+        <div class=\"flip-box-inner\">
+            <div class=\"flip-box-front\">
+                <img src=\"";
+        // line 105
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/hackcess.jpg"), "html", null, true);
+        yield "\" alt=\"Another Image\">
+            </div>
+            <div class=\"flip-box-back\">
+                <h1>Vice-Président d'Hackcess</h1>
+                <h3> Depuis 2024</h3>
+                <p>Grâce au club cyber de l'IUT, je peux participer à des concours de cybersécurité comme le CSAW (où nous avons finis 5/250) et le MarsH@ck (17/26)
+                <p> Je fais aussi de la promotion de l'association pendant les journées pour ouvertes ...</p>
+                <p>Je realise aussi des projet (Comme la boutique)</p>
+                <p>Enfin, je fais aussi de la sensibilisation à la cybersécurité entre autre avec les élèves de lycée participant au programme cordée de la réussite</p>
+            </div>
+        </div>
     </div>
-    <div class=\"box\">
-        <img src=\"";
-        // line 99
+    <div class=\"box flip-box\">
+        <div class=\"flip-box-inner\">
+            <div class=\"flip-box-front\">
+                <img src=\"";
+        // line 120
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/formation.jpg"), "html", null, true);
-        yield "\" alt=\"Engagement 3\">
-        <p>Responsable de formation</p>
+        yield "\" alt=\"Another Image\">
+            </div>
+            <div class=\"flip-box-back\">
+                <h1>Responsable de formation</h1>
+                <h3> Depuis 2020</h3>
+                <p> Je suis le responsable de formation arbitrage de mon club de basket. Je suis donc chargé de m'occuper des matinées de formation dans le club mais je dois aussi réaliser un suivi des arbitres (les samedis sur le bord du terrain) pour les aider à s'améliorer. Enfin, je les accompagne jusqu'à l'examen d'arbitre départementale afin de devenir arbitre du comité de la Loire</p>
+            </div>
+        </div>
     </div>
+
 </div>
 
 ";
@@ -277,7 +305,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  243 => 99,  236 => 95,  229 => 91,  210 => 75,  195 => 63,  181 => 52,  177 => 51,  171 => 48,  167 => 47,  161 => 44,  157 => 43,  151 => 40,  147 => 39,  141 => 36,  137 => 35,  122 => 23,  108 => 12,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  264 => 120,  246 => 105,  231 => 93,  210 => 75,  195 => 63,  181 => 52,  177 => 51,  171 => 48,  167 => 47,  161 => 44,  157 => 43,  151 => 40,  147 => 39,  141 => 36,  137 => 35,  122 => 23,  108 => 12,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -328,11 +356,11 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
         <img src=\"{{ asset('images/programmer.jpg') }}\" alt=\"Programmer\">
         <p>Créer des outils et des applications informatiques pour les R&T</p>
     </a>
-    <a href=\"{{ path('competence_securiser') }}\" class=\"box\">
+    <a href=\"{{ path('competence_proteger') }}\" class=\"box\">
         <img src=\"{{ asset('images/cyber1.jpg') }}\" alt=\"Cyber 2\">
         <p>Administrer un système d’information sécurisé</p>
     </a>
-    <a href=\"{{ path('competence_proteger') }}\" class=\"box\">
+    <a href=\"{{ path('competence_securiser') }}\" class=\"box\">
         <img src=\"{{ asset('images/cyber2.jpg') }}\" alt=\"Cyber 1\">
         <p>Surveiller un système d’information sécurisé</p>
     </a>
@@ -348,7 +376,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
             </div>
             <div class=\"flip-box-back\">
                 <h1>Tuteur numérique Etudiant</h1>
-                <p>Aout - Octobre 2024</p>
+                <h3>Aout - Octobre 2024</h3>
                 <p>J'ai aidé les étudiants pour solutionner des problèmes informatiques au début d'année scolaire. Je les aidais dans les procédures numériques, les conseillais pour du matériel information ou les guidais sur les outils mis à disposition par l'UJM</p>
             </div>
         </div>
@@ -360,7 +388,7 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
             </div>
             <div class=\"flip-box-back\">
                 <h1>Renfort auu service informatique</h1>
-                <p>Juillet 2024</p>
+                <h3>Juillet 2024</h3>
                 <p>Pendant les vacances, je suis venu aider le service informatique notammer pour effectuer le changement et déploiement de nouveaux outils /matériels informatiques dans l'IUT mais aussi pour effectuer la maintenance de l’infrastructure réseau</p>
 
             </div>
@@ -371,18 +399,46 @@ class __TwigTemplate_ae4966e262dd2d4d073d9d262685848c extends Template
 <h1 class=\"title\" id=\"engagements\">Mes engagements</h1>
 
 <div class=\"engagements-container\">
-    <div class=\"box\">
-        <img src=\"{{ asset('images/arbitre.jpg') }}\" alt=\"Engagement 1\">
-        <p>Arbitre départementale de basketball</p>
+    <div class=\"box flip-box\">
+        <div class=\"flip-box-inner\">
+            <div class=\"flip-box-front\">
+                <img src=\"{{ asset('images/arbitre.jpg') }}\" alt=\"Another Image\">
+            </div>
+            <div class=\"flip-box-back\">
+                <h1>Arbitre départementale de basketball</h1>
+                <h3>Depuis 2021</h3>
+                <p>A la fin du COVID-19, j'ai pu passer la formation d'arbitre départementale de basket. Je suis alors devenu arbitre stagiaire pour le comité de la Loire et après quelque mois, j'ai pu devenir arbitre officiel. Cela m'a permis de pouvoir continuer d'arbitrer des match pour le comité en allant jusqu'à arbitrer de la régionale. J'ai aussi pu arbitrer des matchs internationnaux comme sur la photo au tournoi internationnal de montbrison. </p>
+            </div>
+        </div>
     </div>
-    <div class=\"box\">
-        <img src=\"{{ asset('images/hackcess2.png') }}\" alt=\"Engagement 2\">
-        <p>Vice-Président d'Hackcess</p>
+    <div class=\"box flip-box\">
+        <div class=\"flip-box-inner\">
+            <div class=\"flip-box-front\">
+                <img src=\"{{ asset('images/hackcess.jpg') }}\" alt=\"Another Image\">
+            </div>
+            <div class=\"flip-box-back\">
+                <h1>Vice-Président d'Hackcess</h1>
+                <h3> Depuis 2024</h3>
+                <p>Grâce au club cyber de l'IUT, je peux participer à des concours de cybersécurité comme le CSAW (où nous avons finis 5/250) et le MarsH@ck (17/26)
+                <p> Je fais aussi de la promotion de l'association pendant les journées pour ouvertes ...</p>
+                <p>Je realise aussi des projet (Comme la boutique)</p>
+                <p>Enfin, je fais aussi de la sensibilisation à la cybersécurité entre autre avec les élèves de lycée participant au programme cordée de la réussite</p>
+            </div>
+        </div>
     </div>
-    <div class=\"box\">
-        <img src=\"{{ asset('images/formation.jpg') }}\" alt=\"Engagement 3\">
-        <p>Responsable de formation</p>
+    <div class=\"box flip-box\">
+        <div class=\"flip-box-inner\">
+            <div class=\"flip-box-front\">
+                <img src=\"{{ asset('images/formation.jpg') }}\" alt=\"Another Image\">
+            </div>
+            <div class=\"flip-box-back\">
+                <h1>Responsable de formation</h1>
+                <h3> Depuis 2020</h3>
+                <p> Je suis le responsable de formation arbitrage de mon club de basket. Je suis donc chargé de m'occuper des matinées de formation dans le club mais je dois aussi réaliser un suivi des arbitres (les samedis sur le bord du terrain) pour les aider à s'améliorer. Enfin, je les accompagne jusqu'à l'examen d'arbitre départementale afin de devenir arbitre du comité de la Loire</p>
+            </div>
+        </div>
     </div>
+
 </div>
 
 {% endblock %}", "e_portfolio/index.html.twig", "C:\\Users\\mathi\\Documents\\E-Portfolio\\templates\\e_portfolio\\index.html.twig");

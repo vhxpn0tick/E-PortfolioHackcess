@@ -145,12 +145,16 @@ class __TwigTemplate_0e791381e0697f87ab7fddc999db3488 extends Template
     <div class=\"contact-info\">
         <h2>Suivez-moi</h2>
         <div class=\"social-links\">
-            <a href=\"https://www.linkedin.com/in/votreprofil\" target=\"_blank\">LinkedIn</a>
-            <a href=\"https://github.com/votreprofil\" target=\"_blank\">GitHub</a>
-            <a href=\"https://twitter.com/votreprofil\" target=\"_blank\">Twitter</a>
+            <a href=\"https://www.linkedin.com/in/mathieu-dumas-773155297/\" target=\"_blank\">
+                <i class=\"fab fa-linkedin\"></i> LinkedIn
+            </a>
+            <a href=\"https://github.com/vhxpn0tick\" target=\"_blank\">
+                <i class=\"fab fa-github\"></i> GitHub
+            </a>
+            <a href=\"https://www.instagram.com/m4thieu_dumas/?next=%2F\" target=\"_blank\">
+                <i class=\"fab fa-instagram\"></i> Instagram
+            </a>
         </div>
-        <h2>Mon emplacement</h2>
-        <div id=\"map\"></div>
     </div>
 </div>
 
@@ -160,7 +164,7 @@ class __TwigTemplate_0e791381e0697f87ab7fddc999db3488 extends Template
         if (flashMessage) {
             setTimeout(function() {
                 flashMessage.style.display = 'none';
-            }, 5000); // 5000ms = 5 seconds
+            }, 5000); // Cache le message après 5 secondes
         }
     });
 </script>
@@ -238,12 +242,16 @@ class __TwigTemplate_0e791381e0697f87ab7fddc999db3488 extends Template
     <div class=\"contact-info\">
         <h2>Suivez-moi</h2>
         <div class=\"social-links\">
-            <a href=\"https://www.linkedin.com/in/votreprofil\" target=\"_blank\">LinkedIn</a>
-            <a href=\"https://github.com/votreprofil\" target=\"_blank\">GitHub</a>
-            <a href=\"https://twitter.com/votreprofil\" target=\"_blank\">Twitter</a>
+            <a href=\"https://www.linkedin.com/in/mathieu-dumas-773155297/\" target=\"_blank\">
+                <i class=\"fab fa-linkedin\"></i> LinkedIn
+            </a>
+            <a href=\"https://github.com/vhxpn0tick\" target=\"_blank\">
+                <i class=\"fab fa-github\"></i> GitHub
+            </a>
+            <a href=\"https://www.instagram.com/m4thieu_dumas/?next=%2F\" target=\"_blank\">
+                <i class=\"fab fa-instagram\"></i> Instagram
+            </a>
         </div>
-        <h2>Mon emplacement</h2>
-        <div id=\"map\"></div>
     </div>
 </div>
 
@@ -253,7 +261,7 @@ class __TwigTemplate_0e791381e0697f87ab7fddc999db3488 extends Template
         if (flashMessage) {
             setTimeout(function() {
                 flashMessage.style.display = 'none';
-            }, 5000); // 5000ms = 5 seconds
+            }, 5000); // Cache le message après 5 secondes
         }
     });
 </script>
