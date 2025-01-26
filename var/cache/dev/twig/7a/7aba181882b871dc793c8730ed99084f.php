@@ -500,6 +500,6 @@ class __TwigTemplate_60cc08c1703bfbe2e2cc2debdfc4f4d9 extends Template
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\mathi\\Documents\\E-Portfolio\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\mathi\\Documents\\test\\E-PortfolioHackcess\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }
